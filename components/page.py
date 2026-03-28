@@ -132,29 +132,6 @@ def render_journey() -> str:
 </section>"""
 
 
-# ── TECH STACK ─────────────────────────────────────────────────────────────────
-def render_stack() -> str:
-    cats = ""
-    for name, techs in TECH_STACK.items():
-        tags = "".join(f'<span class="stack-tag">{t}</span>' for t in techs)
-        cats += f"""
-    <div class="stack-cat">
-      <div class="stack-cat-name">{name}</div>
-      <div class="stack-tags">{tags}</div>
-    </div>"""
-
-    return f"""
-<section id="stack">
-  <div class="section-wrap">
-    <div class="reveal">
-      <div class="eyebrow">Tools of the Trade</div>
-      <h2 class="section-title">Tech Stack</h2>
-      <p class="section-sub">Every layer from raw data to deployed model.</p>
-    </div>
-    <div class="stack-grid">{cats}</div>
-  </div>
-</section>"""
-
 
 # ── PROJECTS ───────────────────────────────────────────────────────────────────
 def render_projects() -> str:
@@ -204,6 +181,32 @@ def render_projects() -> str:
     <div class="projects-grid">{cards}</div>
   </div>
 </section>"""
+
+
+# ── TECH STACK ─────────────────────────────────────────────────────────────────
+def render_stack() -> str:
+    cats = ""
+    for name, techs in TECH_STACK.items():
+        tags = "".join(f'<span class="stack-tag">{t}</span>' for t in techs)
+        cats += f"""
+    <div class="stack-cat">
+      <div class="stack-cat-name">{name}</div>
+      <div class="stack-tags">{tags}</div>
+    </div>"""
+
+    return f"""
+<section id="stack">
+  <div class="section-wrap">
+    <div class="reveal">
+      <div class="eyebrow">Tools of the Trade</div>
+      <h2 class="section-title">Tech Stack</h2>
+      <p class="section-sub">Every layer from raw data to deployed model.</p>
+    </div>
+    <div class="stack-grid">{cats}</div>
+  </div>
+</section>"""
+
+
 
 
 # ── CONTACT ────────────────────────────────────────────────────────────────────
@@ -318,9 +321,9 @@ def render_page() -> str:
     <hr class="h-rule">
     {render_journey()}
     <hr class="h-rule">
-    {render_stack()}
-    <hr class="h-rule">
     {render_projects()}
+    <hr class="h-rule">
+    {render_stack()}
     <hr class="h-rule">
     {render_contact()}
   </main>
