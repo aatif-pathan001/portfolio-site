@@ -16,8 +16,8 @@ PERSONAL = {
     "email": "aatifkhanjodhpur@gmail.com",
     "phone": "+91-9166199786",
     "location": "Gandhinagar, Gujarat, India",
-    "linkedin": "https://linkedin.com/in/aatif-khan-pathan",
-    "github": "https://github.com/aatifkhan",
+    "linkedin": "https://linkedin.com/in/aatif-khan-pathan-a1674617b",
+    "github": "https://github.com/aatif-pathan001",
     "blog": "https://aatifkhan.hashnode.dev",  # placeholder blog URL
     "resume_url": "/static/assets/Aatif_Khan_Pathan_ML_Engineer_Resume.pdf",
     "status": "Open to Senior ML / AI Roles",
