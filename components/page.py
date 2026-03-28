@@ -147,6 +147,9 @@ def render_projects() -> str:
     for p in PROJECTS:
         tags    = "".join(f'<span class="proj-tag">{t}</span>' for t in p["tags"])
         metrics = "".join(f'<span class="proj-metric">{m}</span>' for m in p["metrics"])
+
+        desc_bullets = "".join(f'<li>{item}</li>' for item in p["description"])
+
         star    = '<span class="proj-star">Featured</span>' if p["featured"] else ""
         cls     = "proj-card featured" if p["featured"] else "proj-card"
         cards += f"""
@@ -156,7 +159,11 @@ def render_projects() -> str:
         {star}
       </div>
       <div class="proj-title">{p['title']}</div>
-      <p class="proj-desc">{p['description']}</p>
+
+      <ul class="proj-desc-list">
+        {desc_bullets}
+      </ul>
+
       <div class="proj-metrics">{metrics}</div>
       <div class="proj-tags">{tags}</div>
       <div class="proj-actions">

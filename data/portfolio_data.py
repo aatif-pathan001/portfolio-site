@@ -43,7 +43,7 @@ STATS = [
 # ── Tech Stack (categorised) ───────────────────────────────────────────────────
 TECH_STACK = {
     "ML & Deep Learning": [
-        "PyTorch", "TensorFlow", "Scikit-learn", "CNN", "RNN", "LSTM",
+        "PyTorch", "Scikit-learn", "CNN", "RNN", "LSTM",
         "Transformers", "Reinforcement Learning", "Transfer Learning",
     ],
     "Computer Vision": [
@@ -52,18 +52,14 @@ TECH_STACK = {
     ],
     "NLP & LLMs": [
         "BERT", "Hugging Face", "LangChain", "RAG", "ChromaDB",
-        "Gemini API", "GPT", "Prompt Engineering", "LoRA / QLoRA",
+        "Gemini/OpenAI API", "GPT", "Prompt Engineering", "LoRA / QLoRA",
     ],
     "MLOps & DevOps": [
         "MLflow", "Docker", "GitHub Actions", "FastAPI",
-        "Model Monitoring", "Drift Detection", "CI/CD",
-    ],
-    "Cloud": [
-        "GCP Vertex AI", "Cloud Storage", "Cloud Build",
-        "Cloud Monitoring", "Serverless Deployment",
+        "Model Monitoring", "CI/CD", "Google Cloud", "GCP Vertex AI",
     ],
     "Programming": [
-        "Python (Advanced)", "NumPy", "Pandas", "Matplotlib",
+        "Python", "NumPy", "Pandas", "Matplotlib",
         "Streamlit", "Gradio", "SQL", "C++", "MATLAB",
     ],
 }
@@ -118,10 +114,11 @@ PROJECTS = [
         "title": "Custom YOLO Object Detection System",
         "category": "Computer Vision",
         "tags": ["PyTorch", "YOLOv8M", "GCP Vertex AI", "FastAPI", "Docker"],
-        "description": (
-            "Trained YOLOv8M (25.9M params) achieving 70.6% mAP@0.5. "
-            "Real-time 20-25 FPS on CPU. Automated CI/CD cut deployment from 2h → 8 min."
-        ),
+        "description": [
+            "Trained YOLOv8M (25.9M params) achieving 70.6% mAP@0.5. ",
+            "Real-time 20-25 FPS on CPU.",
+            "Automated CI/CD cut deployment from 2h → 8 min."
+],
         "metrics": ["70.6% mAP@0.5", "20-25 FPS", "145ms avg latency"],
         "github": "#",
         "demo": "#",
@@ -132,10 +129,10 @@ PROJECTS = [
         "title": "BERT NER + Multi-Task NLP API",
         "category": "NLP / LLMs",
         "tags": ["BERT", "Transformers", "Hugging Face", "FastAPI", "GCP"],
-        "description": (
-            "Fine-tuned bert-base-cased on CoNLL-2003 achieving 92.3% F1. "
+        "description": [
+            "Fine-tuned bert-base-cased on CoNLL-2003 achieving 92.3% F1. ",
             "Unified multi-task API: NER, sentiment, topic classification, QA."
-        ),
+        ],
         "metrics": ["92.3% F1", "91.9% Precision", "1000+ predictions/day"],
         "github": "#",
         "demo": "#",
@@ -146,10 +143,10 @@ PROJECTS = [
         "title": "LSTM + Prophet Time Series Forecasting",
         "category": "Forecasting",
         "tags": ["PyTorch", "Prophet", "Streamlit", "Yahoo Finance API"],
-        "description": (
-            "LSTM with 60-day lookback achieving ~2% MAPE for stock forecasting. "
+        "description": [
+            "LSTM with 60-day lookback achieving ~2% MAPE for stock forecasting. ",
             "Interactive Streamlit dashboard with 30-day confidence intervals."
-        ),
+        ],
         "metrics": ["~2% MAPE", "30x faster with Prophet", "30-day forecasts"],
         "github": "#",
         "demo": "#",
@@ -160,10 +157,10 @@ PROJECTS = [
         "title": "Production RAG System",
         "category": "NLP / LLMs",
         "tags": ["LangChain", "ChromaDB", "Gemini 2.5 Flash", "Sentence Transformers"],
-        "description": (
-            "RAG pipeline over 100-150 markdown chunks with semantic search. "
+        "description": [
+            "RAG pipeline over 100-150 markdown chunks with semantic search. ",
             "95% accuracy improvement over base LLM, 2-5s response time."
-        ),
+        ],
         "metrics": ["95% accuracy boost", "2-5s response", "500-char chunking"],
         "github": "#",
         "demo": "#",
@@ -174,10 +171,11 @@ PROJECTS = [
         "title": "Reinforcement Learning Suite",
         "category": "Reinforcement Learning",
         "tags": ["PyTorch", "Gymnasium", "Q-Learning", "DQN", "REINFORCE"],
-        "description": (
-            "Q-Learning (100% FrozenLake), DQN (215 avg reward CartPole), "
+        "description": [
+            "Q-Learning (100% FrozenLake)", 
+            "DQN (215 avg reward CartPole)",
             "REINFORCE for continuous action spaces — robotics foundation."
-        ),
+        ],
         "metrics": ["100% FrozenLake", "215 avg reward", "DQN + Policy Gradients"],
         "github": "#",
         "demo": "#",
@@ -188,10 +186,10 @@ PROJECTS = [
         "title": "Electrical Equipment Image Classifier",
         "category": "Computer Vision",
         "tags": ["ResNet50", "PyTorch", "Transfer Learning", "AdamW"],
-        "description": (
-            "Transfer learning with ResNet50: feature extraction (95.83%) → fine-tuning (99.58%). "
+        "description": [
+            "Transfer learning with ResNet50: feature extraction (95.83%) → fine-tuning (99.58%). ",
             "Custom electrical equipment dataset with AdamW + LR scheduling."
-        ),
+        ],
         "metrics": ["99.58% accuracy", "ResNet50", "Strategic layer unfreezing"],
         "github": "#",
         "demo": "#",
@@ -202,10 +200,10 @@ PROJECTS = [
         "title": "Driver Drowsiness Detection (Edge)",
         "category": "Computer Vision",
         "tags": ["EfficientNet-B0", "OpenCV", "PyTorch", "Raspberry Pi"],
-        "description": (
-            "Real-time drowsiness detection (alert/drowsy/sleeping) with 93% accuracy. "
+        "description": [
+            "Real-time drowsiness detection (alert/drowsy/sleeping) with 93% accuracy.",
             "Quantised for edge deployment on Raspberry Pi."
-        ),
+        ],
         "metrics": ["93% accuracy", "Edge-optimised", "3-class classification"],
         "github": "#",
         "demo": "#",
@@ -216,10 +214,10 @@ PROJECTS = [
         "title": "End-to-End MLOps Pipeline",
         "category": "MLOps",
         "tags": ["MLflow", "FastAPI", "Docker", "GitHub Actions", "GCP Vertex AI"],
-        "description": (
-            "Complete pipeline: ingest → validate → train → evaluate → register → deploy → monitor. "
+        "description": [
+            "Complete pipeline: ingest → validate → train → evaluate → register → deploy → monitor.",
             "15+ model versions, A/B testing, zero-downtime deployments."
-        ),
+        ],
         "metrics": ["15+ model versions", "Zero-downtime CI/CD", "P50/P95/P99 monitoring"],
         "github": "#",
         "demo": "#",
@@ -230,10 +228,10 @@ PROJECTS = [
         "title": "LLM Fine-Tuning with LoRA/QLoRA",
         "category": "NLP / LLMs",
         "tags": ["LoRA", "QLoRA", "Hugging Face", "PEFT"],
-        "description": (
-            "Parameter-efficient fine-tuning: 99% parameter reduction via LoRA. "
+        "description": [
+            "Parameter-efficient fine-tuning: 99% parameter reduction via LoRA. ",
             "QLoRA 4-bit quantisation: memory from 14GB → 4GB with no performance loss."
-        ),
+        ],
         "metrics": ["99% param reduction", "14GB → 4GB RAM", "PEFT techniques"],
         "github": "#",
         "demo": "#",
@@ -244,10 +242,11 @@ PROJECTS = [
         "title": "AI Financial News & Trading Insights",
         "category": "NLP / LLMs",
         "tags": ["PyTorch", "Gemini API", "BeautifulSoup", "Gradio"],
-        "description": (
-            "Scrapes 50+ financial articles daily. Gemini LLM generates summaries "
-            "and actionable trading signals, cutting manual analysis by 60%."
-        ),
+        "description": [
+            "Scrapes 50+ financial articles daily.",
+            "Gemini LLM generates summaries and actionable trading signals",
+            "Cutting manual analysis by 60%."
+        ],
         "metrics": ["50+ articles/day", "60% time saved", "Real-time signals"],
         "github": "#",
         "demo": "#",
