@@ -120,7 +120,7 @@ PROJECTS = [
             "Automated CI/CD cut deployment from 2h → 8 min."
 ],
         "metrics": ["70.6% mAP@0.5", "20-25 FPS", "145ms avg latency"],
-        "github": "#",
+        "github": "https://github.com/aatif-pathan001/Cloths-Detection",
         "demo": "#",
         "featured": True,
     },
@@ -148,7 +148,7 @@ PROJECTS = [
             "Interactive Streamlit dashboard with 30-day confidence intervals."
         ],
         "metrics": ["~2% MAPE", "30x faster with Prophet", "30-day forecasts"],
-        "github": "#",
+        "github": "https://github.com/aatif-pathan001/Forecasting-StockPrice",
         "demo": "#",
         "featured": True,
     },
@@ -162,7 +162,7 @@ PROJECTS = [
             "95% accuracy improvement over base LLM, 2-5s response time."
         ],
         "metrics": ["95% accuracy boost", "2-5s response", "500-char chunking"],
-        "github": "#",
+        "github": "https://github.com/aatif-pathan001/RAG-System",
         "demo": "#",
         "featured": False,
     },
@@ -178,7 +178,7 @@ PROJECTS = [
         ],
         "metrics": ["100% FrozenLake", "215 avg reward", "DQN + Policy Gradients"],
         "github": "#",
-        "demo": "#",
+        "demo": "https://github.com/aatif-pathan001/Reinforcement-Learning",
         "featured": False,
     },
     {
@@ -192,7 +192,7 @@ PROJECTS = [
         ],
         "metrics": ["99.58% accuracy", "ResNet50", "Strategic layer unfreezing"],
         "github": "#",
-        "demo": "#",
+        "demo": "https://github.com/aatif-pathan001/Transfer-Learning-Projects",
         "featured": True,
     },
     {
@@ -206,7 +206,7 @@ PROJECTS = [
         ],
         "metrics": ["93% accuracy", "Edge-optimised", "3-class classification"],
         "github": "#",
-        "demo": "#",
+        "demo": "https://github.com/aatif-pathan001/Safe-Drive-Vision",
         "featured": False,
     },
     {
