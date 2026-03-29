@@ -121,7 +121,7 @@ PROJECTS = [
 ],
         "metrics": ["70.6% mAP@0.5", "20-25 FPS", "145ms avg latency"],
         "github": "https://github.com/aatif-pathan001/Cloths-Detection",
-        "demo": "#",
+        "demo": "https://yolo-vision-app.streamlit.app/",
         "featured": True,
     },
     {
