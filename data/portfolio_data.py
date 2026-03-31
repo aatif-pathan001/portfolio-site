@@ -124,22 +124,22 @@ PROJECTS = [
         "demo": "https://yolo-vision-app.streamlit.app/",
         "featured": True,
     },
+    #{
+    #    "id": 2,
+    #    "title": "BERT NER + Multi-Task NLP API",
+    #    "category": "NLP / LLMs",
+    #    "tags": ["BERT", "Transformers", "Hugging Face", "FastAPI", "GCP"],
+    #    "description": [
+    #        "Fine-tuned bert-base-cased on CoNLL-2003 achieving 92.3% F1. ",
+    #        "Unified multi-task API: NER, sentiment, topic classification, QA."
+    #    ],
+    #    "metrics": ["92.3% F1", "91.9% Precision", "1000+ predictions/day"],
+    #    "github": "#",
+    #    "demo": "#",
+    #    "featured": True,
+    #},
     {
         "id": 2,
-        "title": "BERT NER + Multi-Task NLP API",
-        "category": "NLP / LLMs",
-        "tags": ["BERT", "Transformers", "Hugging Face", "FastAPI", "GCP"],
-        "description": [
-            "Fine-tuned bert-base-cased on CoNLL-2003 achieving 92.3% F1. ",
-            "Unified multi-task API: NER, sentiment, topic classification, QA."
-        ],
-        "metrics": ["92.3% F1", "91.9% Precision", "1000+ predictions/day"],
-        "github": "#",
-        "demo": "#",
-        "featured": True,
-    },
-    {
-        "id": 3,
         "title": "LSTM + Prophet Time Series Forecasting",
         "category": "Forecasting",
         "tags": ["PyTorch", "Prophet", "Streamlit", "Yahoo Finance API"],
@@ -153,7 +153,7 @@ PROJECTS = [
         "featured": True,
     },
     {
-        "id": 4,
+        "id": 3,
         "title": "Production RAG System",
         "category": "NLP / LLMs",
         "tags": ["LangChain", "ChromaDB", "Gemini 2.5 Flash", "Sentence Transformers"],
@@ -167,7 +167,7 @@ PROJECTS = [
         "featured": False,
     },
     {
-        "id": 5,
+        "id": 4,
         "title": "Reinforcement Learning Suite",
         "category": "Reinforcement Learning",
         "tags": ["PyTorch", "Gymnasium", "Q-Learning", "DQN", "REINFORCE"],
@@ -177,12 +177,12 @@ PROJECTS = [
             "REINFORCE for continuous action spaces — robotics foundation."
         ],
         "metrics": ["100% FrozenLake", "215 avg reward", "DQN + Policy Gradients"],
-        "github": "#",
-        "demo": "https://github.com/aatif-pathan001/Reinforcement-Learning",
+        "github": "https://github.com/aatif-pathan001/Reinforcement-Learning",
+        "demo": "#",
         "featured": False,
     },
     {
-        "id": 6,
+        "id": 5,
         "title": "Electrical Equipment Image Classifier",
         "category": "Computer Vision",
         "tags": ["ResNet50", "PyTorch", "Transfer Learning", "AdamW"],
@@ -191,12 +191,12 @@ PROJECTS = [
             "Custom electrical equipment dataset with AdamW + LR scheduling."
         ],
         "metrics": ["99.58% accuracy", "ResNet50", "Strategic layer unfreezing"],
-        "github": "#",
-        "demo": "https://github.com/aatif-pathan001/Transfer-Learning-Projects",
+        "github": "https://github.com/aatif-pathan001/Transfer-Learning-Projects",
+        "demo": "#",
         "featured": True,
     },
     {
-        "id": 7,
+        "id": 6,
         "title": "Driver Drowsiness Detection (Edge)",
         "category": "Computer Vision",
         "tags": ["EfficientNet-B0", "OpenCV", "PyTorch", "Raspberry Pi"],
@@ -205,26 +205,26 @@ PROJECTS = [
             "Quantised for edge deployment on Raspberry Pi."
         ],
         "metrics": ["93% accuracy", "Edge-optimised", "3-class classification"],
-        "github": "#",
-        "demo": "https://github.com/aatif-pathan001/Safe-Drive-Vision",
+        "github": "https://github.com/aatif-pathan001/Safe-Drive-Vision",
+        "demo": "#",
         "featured": False,
     },
-    {
-        "id": 8,
-        "title": "End-to-End MLOps Pipeline",
-        "category": "MLOps",
-        "tags": ["MLflow", "FastAPI", "Docker", "GitHub Actions", "GCP Vertex AI"],
-        "description": [
-            "Complete pipeline: ingest → validate → train → evaluate → register → deploy → monitor.",
-            "15+ model versions, A/B testing, zero-downtime deployments."
-        ],
-        "metrics": ["15+ model versions", "Zero-downtime CI/CD", "P50/P95/P99 monitoring"],
-        "github": "#",
-        "demo": "#",
-        "featured": True,
-    },
-    {
-        "id": 9,
+    #{
+    #    "id": 8,
+    #    "title": "End-to-End MLOps Pipeline",
+    #    "category": "MLOps",
+    #    "tags": ["MLflow", "FastAPI", "Docker", "GitHub Actions", "GCP Vertex AI"],
+    #    "description": [
+    #        "Complete pipeline: ingest → validate → train → evaluate → register → deploy → monitor.",
+    #        "15+ model versions, A/B testing, zero-downtime deployments."
+    #    ],
+    #    "metrics": ["15+ model versions", "Zero-downtime CI/CD", "P50/P95/P99 monitoring"],
+    #    "github": "#",
+    #    "demo": "#",
+    #    "featured": True,
+    #},
+    #{
+        "id": 7,
         "title": "LLM Fine-Tuning with LoRA/QLoRA",
         "category": "NLP / LLMs",
         "tags": ["LoRA", "QLoRA", "Hugging Face", "PEFT"],
@@ -238,7 +238,7 @@ PROJECTS = [
         "featured": False,
     },
     {
-        "id": 10,
+        "id": 8,
         "title": "AI Financial News & Trading Insights",
         "category": "NLP / LLMs",
         "tags": ["PyTorch", "Gemini API", "BeautifulSoup", "Gradio"],
