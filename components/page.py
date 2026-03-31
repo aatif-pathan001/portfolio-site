@@ -37,7 +37,7 @@ def render_nav() -> str:
     )
     return f"""
 <nav class="nav" id="main-nav">
-  <a class="nav-brand" href="#hero">AK<span class="accent">.</span>ML</a>
+  <a class="nav-brand" href="#hero">Aatif.</a>
   <ul class="nav-links" id="nav-menu">
     {items}
     <li><a href="{PERSONAL['blog']}" class="nav-hire" target="_blank" rel="noopener">Hire Me</a></li>
@@ -63,22 +63,20 @@ def render_hero() -> str:
     {PERSONAL['status']}
   </div>
 
-  <div class="hero-label">{PERSONAL['name']}</div>
+  
 
-  <div class="hero-h1">Building the</div>
-  <div class="hero-h1">Intelligence</div>
-  <div class="hero-h1-ghost">of Tomorrow.</div>
+  <div class="hero-h1">Aatif Khan</div>
+  <div class="hero-h1-ghost">Pathan</div>
 
   <p class="hero-desc">
-    <strong>ML Engineer @ TCS</strong> · Electrical Engineering foundations,
-    deep AI/ML specialisation.<br>
-    Expert in <strong>PyTorch</strong>, <strong>YOLO</strong>, <strong>BERT</strong>,
-    <strong>LangChain</strong> and production <strong>MLOps</strong> on GCP.
+    <strong>Building production</strong> -ready ML systems on GCP — from research to<br>
+    deployment. 10 projects across <strong>Computer Vision</strong>, <strong>NLP</strong>, <strong>Reinforcement Learning</strong>,
+    and <strong>MLOps</strong>.
   </p>
 
   <div class="hero-ctas">
     <a href="#projects" class="btn btn-green">
-      {I['arrow']}&nbsp; View Projects
+       Explore Projects {I['arrow']}&nbsp;
     </a>
     <a href="{PERSONAL['resume_url']}" download class="btn btn-ghost">
       {I['download']}&nbsp; Resume
@@ -121,8 +119,8 @@ def render_journey() -> str:
 <section id="journey">
   <div class="section-wrap">
     <div class="reveal">
-      <div class="eyebrow">Career Roadmap</div>
-      <h2 class="section-title">The Journey</h2>
+      <div class="eyebrow">EXPERIENCE & EDUCATION</div>
+      <h2 class="section-title">The Journey so far. </h2>
       <p class="section-sub">From Electrical Engineering to production AI/ML systems at scale.</p>
     </div>
     <div class="timeline-two-col">
@@ -205,9 +203,8 @@ def render_stack() -> str:
 <section id="stack">
   <div class="section-wrap">
     <div class="reveal">
-      <div class="eyebrow">Tools of the Trade</div>
-      <h2 class="section-title">Tech Stack</h2>
-      <p class="section-sub">Every layer from raw data to deployed model.</p>
+      <div class="eyebrow">SKILLS & TECHNOLOGIES</div>
+      <h2 class="section-title">Technical Arsenal.</h2>
     </div>
     <div class="stack-grid">{cats}</div>
   </div>
@@ -237,7 +234,7 @@ def render_contact() -> str:
   <div class="section-wrap">
     <div class="reveal">
       <div class="eyebrow">Get In Touch</div>
-      <h2 class="section-title">Let's Build<br><span class="g">Something</span><br>Intelligent.</h2>
+      <h2 class="section-title">Let's Build<br><span class="g">Something</span><br>Real.</h2>
     </div>
     <div class="contact-grid">
 

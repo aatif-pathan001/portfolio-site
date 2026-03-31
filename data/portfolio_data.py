@@ -20,7 +20,7 @@ PERSONAL = {
     "github": "https://github.com/aatif-pathan001",
     "blog": "https://aatifkhan.hashnode.dev",  # placeholder blog URL
     "resume_url": "/static/assets/Aatif_Khan_Pathan_ML_Engineer_Resume.pdf",
-    "status": "Open to Senior ML / AI Roles",
+    "status": "Available for opportunities",
     "summary": (
         "Machine Learning Engineer with 3+ years of experience building "
         "production-grade deep learning systems for computer vision, NLP, and "
@@ -32,12 +32,14 @@ PERSONAL = {
 
 # ── Stats / Achievements ───────────────────────────────────────────────────────
 STATS = [
+    {"value": "3+",     "label": "Years Experience"},
+    {"value": "10+",    "label": "Production Projects"},
     {"value": "99.58%", "label": "Image Classification Accuracy"},
     {"value": "92.3%",  "label": "F1 Score – NER"},
     {"value": "70.6%",  "label": "mAP – Object Detection"},
-    {"value": "10+",    "label": "Production ML Systems"},
-    {"value": "94%",    "label": "Deployment Time Reduction"},
-    {"value": "3+",     "label": "Years Experience"},
+    
+    #{"value": "94%",    "label": "Deployment Time Reduction"},
+
 ]
 
 # ── Tech Stack (categorised) ───────────────────────────────────────────────────
@@ -223,7 +225,7 @@ PROJECTS = [
     #    "demo": "#",
     #    "featured": True,
     #},
-    #{
+    {
         "id": 7,
         "title": "LLM Fine-Tuning with LoRA/QLoRA",
         "category": "NLP / LLMs",
